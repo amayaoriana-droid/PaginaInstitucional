@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Batalla Épica</title>
+<link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+  <h1>BATALLA ÉPICA</h1>
+
+  <div class="contenedor">
+    <!-- JUGADOR 1 -->
+    <div class="jugador">
+      <h2>Jugador 1</h2>
+      <div class="imagen-contenedor">
+        <img id="fighter1Image" src="/img/placeholder1.png" alt="Personaje 1" />
+      </div>
+      <select id="fighter1">
+        <option value="">-- Seleccioná un personaje --</option>
+      </select>
+    </div>
+
+    <!-- VS -->
+    <div style="display:flex; align-items:center; justify-content:center;">
+      <h2 style="margin:0 10px; font-size:3rem; text-shadow: 0 0 10px #ff6600;">VS</h2>
+    </div>
+
+    <!-- JUGADOR 2 -->
+    <div class="jugador">
+      <h2>Jugador 2</h2>
+      <div class="imagen-contenedor">
+        <img id="fighter2Image" src="/img/placeholder2.png" alt="Personaje 2" />
+      </div>
+      <select id="fighter2">
+        <option value="">-- Seleccioná un personaje --</option>
+      </select>
+    </div>
+  </div>
+
+  <button id="fightButton" class="btn-pelear">¡PELEAR!</button>
+
+  <div id="result" class="resultado hidden" style="margin-top:25px; font-size:1.3rem;"></div>
+
+
+<script defer src="/JS/main.js"></script>
+</body>
+</html>
